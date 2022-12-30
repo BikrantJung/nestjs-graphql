@@ -1,0 +1,24 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Book {
+  id: Int!
+  title: String!
+  price: Int!
+}
+
+type Query {
+  getAllBooks: [Book!]!
+  getSingleBook(id: Int!): Book!
+}
+
+type Mutation {
+  addBook(addBookArgs: AddBookArgs!): Book!
+}
+
+input AddBookArgs {
+  id: Int!
+  title: String!
+  price: Int!
+}
